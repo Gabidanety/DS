@@ -6,7 +6,10 @@ public class ex4 {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner (System.in);
-
+			
+		//p = custo
+		//m = margem de lucro
+		//pv = preco de venda
 		int i=1,r;
 		double p,m,pv;
 		
@@ -15,10 +18,10 @@ public class ex4 {
 			p = in.nextDouble();
 		System.out.println("Digite a margem de lucro:");
 			m = in.nextDouble();
-			pv = p-m/100;
+			pv = ((m/100)*p)+p;
 		System.out.println("O preco de venda e: "+pv);
 		
-		System.out.println("Deseja continuar? s=1 n=2 ");
+		System.out.println("Deseja continuar? sim=1 nao=2 ");
 	
 		r = in.nextInt();
 	
